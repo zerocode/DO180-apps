@@ -3,7 +3,7 @@ var createError = require('html-errors');
 var express = require('express');
 app = express();
 
-app.get('/', function (req, res) {
+app.get('/hello', function (req, res) {
   res.send('Hello World from pod: ' + process.env.HOSTNAME + '\n')
 });
 
